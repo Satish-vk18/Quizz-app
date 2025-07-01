@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun Quizz</title>
+  <link rel="stylesheet" href="../CSS/login.css">
+  <script src = "../JAVASCRIPT/firebaseAuth.js" type="module"></script>
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../HTML/index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="form-container">
+    <div class="Newuser-container form-box" id="registerForm">
+      <h2 id="title">New Account</h2>
+      <div class="form">
+          <form action="">
+              <div>
+                <input type="text" placeholder="User Name" autocomplete="off"  id="userName">
+              </div>
+              <div>
+                <input type="email" placeholder="Email" autocomplete="off"  id="Email">
+              </div>
+              <div>
+                  <input type="password" placeholder="password" autocomplete="off"  id="Password">
+              </div>
+              <button type="submit" id="create-btn">Create Account</button>
+          </form>
+          <div class="login-link">
+              Alredy I have Account <span id="loginBtn">Login here !</span>
+          </div>
+      </div>
+    </div>
+    <div class="olduser-container form-box" id="loginForm">
+        <h2 id="title">Login</h2>
+        <div class="form">
+            <form action="">
+                <div>
+                  <input type="email" placeholder="Email" autocomplete="off" required id="Exist-email">
+                </div>
+                <div>
+                  <input type="password" placeholder="password" autocomplete="off" required id="Exist-password">
+                </div>
+                <button type="submit" id="login-btn">Login</button>
+            </form>
+            <div class="forget">
+              <span href="" id="forgetpassBtn">Forgot password ?</span>
+            </div>
+            <div class="login-link" >
+                 I Don't have Account <span id="registerBtn">register here !</span>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Fun Quizz. All rights reserved.</p>
+  </footer>
+
+  
+  <script src="../JAVASCRIPT/login.js"></script>
+</body>
+</html>
+
+

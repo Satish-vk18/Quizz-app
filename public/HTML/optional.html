@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun Quizz</title>
+  <link rel="stylesheet" href="../CSS/index.css">
+  <script type="module" src="../JAVASCRIPT/optional.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../HTML/optional.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="" id="logoutbtn">LogOut</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Welcome to Quizz Game <br><span id="welcomeUser"></span></h1>
+    <div class="buttons">
+      <button onclick="location.href='./create.html'" class="btn-1" type="button">Create Quiz</button>
+      <button onclick="ConfirmJoin()" class="btn-2" type="button">Join Quiz</button>
+      <!-- <button onclick="location.href='#'" class="btn-3" type="button">Your Quiz List</button> -->
+      <button onclick="location.href='./recentScore.html'" class="btn-4" type="button">Your Recent Score</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Fun Quizz. All rights reserved.</p>
+  </footer>
+  <script>
+    function ConfirmJoin(){
+      const res = confirm("Do You Want Start Quizz ?")
+      if(res){
+        location.href='./join.html'
+      }
+    }
+  </script>
+</body>
+</html>
+

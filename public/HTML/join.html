@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="../CSS/join.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz App</h1>
+    <div id="question-box">
+      <div id="question">Loading...</div>
+      <ul id="options"></ul>
+      <div id="timer">Time left: 60s</div>
+    </div>
+    <div class="buttons">
+      <button id="submit-btn">Submit</button>
+      <button id="next-btn" disabled>Next</button>
+    </div>
+    <div id="result-box" class="hidden"></div>
+  </div>
+  <div id="joinEndBtn">
+    <button id="exitjoinbtn">Exit</button>
+    <button id="restartbtn">Restart</button>
+  </div>
+  <script type="module" src="../JAVASCRIPT/join.js"></script>
+</body>
+</html>
