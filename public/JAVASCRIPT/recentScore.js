@@ -19,31 +19,6 @@
     const app = initializeApp(firebaseConfig);
   
     const db = getFirestore(app);
-//     // const userId = localStorage.getItem("logInUserId");
-//   // Step 3: Function to retrieve user data
-//   const getUserData = async (userId) => {
-//     try {
-//       const userRef = doc((db, "scoreDetails", userId),scoreData);
-//       const docSnap = await getDoc(userRef);
-  
-//       if (docSnap.exists()) {
-//         console.log(" User data retrieved:", docSnap.data());
-//         return docSnap.data();
-//       } else {
-//         console.log(" No user data found!");
-//         return null;
-//       }
-//     } catch (error) {
-//       console.error(" Error getting user data:", error);
-//     }
-//   };
-
-// getUserData(localStorage.getItem("logInUserId"));           // Retrieve
-
-
-
-// import { doc, getDoc } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
-// import  {db}  from '../JAVASCRIPT/join'; // adjust the path to your Firebase config
 
 const userId = localStorage.getItem("logInUserId");
 
