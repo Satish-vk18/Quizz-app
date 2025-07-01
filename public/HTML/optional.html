@@ -13,7 +13,8 @@
       <ul>
         <li><a href="../HTML/optional.html">Home</a></li>
         <li><a href="#">About</a></li>
-        <li><a href="" id="logoutbtn">LogOut</a></li>
+        <!-- <li><a href="" id="logoutbtn" onclick="confirmLogout()">LogOut</a></li> -->
+        <li><button id="logoutbtn" onclick="confirmLogout()">LogOut</button></li>
       </ul>
     </nav>
   </header>
@@ -37,6 +38,11 @@
         location.href='./join.html'
       }
     }
+    function confirmLogout(){
+      // const res = confirm("Are you sure you want to log out?");
+      // if(res){
+        window.location.href="../index.html"
+      }
   </script>
 </body>
 </html>

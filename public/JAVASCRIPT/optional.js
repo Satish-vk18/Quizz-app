@@ -34,17 +34,4 @@
             })
         }
     })
-
-    const logoutBtn = document.getElementById("logoutbtn");
-
-    logoutBtn.addEventListener("click" , ()=>{
-        localStorage.removeItem("logInUserId");
-        signOut(auth).then(()=>{
-            window.location.href = "../index.html";
-            
-        }).catch(err =>{
-            console.log("getting error while signout",err)
-        })
-    })
-
     export {db};
