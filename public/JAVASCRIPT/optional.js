@@ -34,4 +34,21 @@
             })
         }
     })
+<<<<<<< HEAD
     export {db};
+=======
+
+    const logoutBtn = document.getElementById("logoutbtn");
+
+    logoutBtn.addEventListener("click" , ()=>{
+        localStorage.removeItem("logInUserId");
+        signOut(auth).then(()=>{
+            window.location.href = "../index.html"
+            
+        }).catch(err =>{
+            console.log("getting error while signout",err)
+        })
+    })
+
+    export {db};
+>>>>>>> abd2a6b2d9764b025179b013479e97484e6ce88f

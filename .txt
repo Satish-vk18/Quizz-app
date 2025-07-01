@@ -1,0 +1,13 @@
+DEPLOYMENT LINK : 
+https://quizz-login-46241.web.app 
+
+Build Using :
+=> Technologies : HTML , CSS , JS
+=> Tools : Vs Code , Git , Git Bash
+=> Storage : FireBase
+
+Working  :
+=> user can SignUp / SignIn using email and passwords.
+=> user can register with details like name , email , password after then he redirected to login page in order to login with the registered details.
+=> if : user forgot his password then he will receive an reset password email by clicking forget Password after entering of email in email input.
+=> after successfull login he redirected to our main page where user can create quizz , join in quizzz and also he can see his recent score details .
