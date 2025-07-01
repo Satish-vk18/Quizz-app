@@ -40,7 +40,7 @@
     logoutBtn.addEventListener("click" , ()=>{
         localStorage.removeItem("logInUserId");
         signOut(auth).then(()=>{
-            window.location.href = "../HTML/index.html"
+            window.location.href = "../index.html"
             
         }).catch(err =>{
             console.log("getting error while signout",err)
